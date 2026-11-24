@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haven Privacy Policy</title>
+<link rel="icon" href="haven-logo-512.png">
+<style>
+  :root { --bg:#0e1118; --card:#161b26; --text:#eef1f7; --muted:#9aa3b5; --primary:#7886ff; --border:#262d3d; }
+  @media (prefers-color-scheme: light) { :root { --bg:#f5f6f9; --card:#ffffff; --text:#151a24; --muted:#5b6475; --primary:#5b63e6; --border:#e1e4ec; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 20px 64px; }
+  h1 { letter-spacing:-.02em; margin-bottom:4px; }
+  .muted { color:var(--muted); }
+  h2 { margin-top:32px; font-size:1.25rem; }
+  a { color:var(--primary); }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:10px; border-bottom:1px solid var(--border); }
+  th { color:var(--muted); font-weight:600; }
+  .box { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px 16px; }
+  footer { margin-top:40px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--border); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Haven</a></p>
+  <h1>Privacy policy</h1>
+  <p class="muted">Haven for Android, by SH Waqar · Last updated 24 November 2026</p>
+
+  <div class="box"><b>In short:</b> your data stays on your phone, encrypted. The developer never receives it. There are no accounts, ads, analytics or trackers. Data only leaves your phone when you choose to, such as an encrypted backup to your own Google Drive or a file you share.</div>
+
+  <h2>1. What Haven stores, and where</h2>
+  <p>Everything you enter (tasks, money, habits, notes, documents, photos, family details, health entries and settings) is stored only on your phone, in a database encrypted with SQLCipher. Its key is kept in Android’s secure storage. Your PIN and fingerprint setting also stay on the phone. Haven has no server and no user accounts.</p>
+
+  <h2>2. Google Drive backups (optional)</h2>
+  <p>If you tap “Connect Google Drive”, you sign in with Google and Haven asks for one permission, <code>drive.appdata</code>. This lets Haven use only its own hidden app folder in your Drive: it cannot see, open or change any of your other files. Haven reads your Google account’s email address only to show which account is connected.</p>
+  <p>The backup files are encrypted on your phone with a backup password that only you know before they are uploaded, so neither Google nor the developer can read them. Haven keeps your newest 14 backups there. You can disconnect at any time in Settings → Backups, or remove access in your Google Account’s security settings.</p>
+  <p>Haven’s use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. Data from Google is used only to store and restore your own backups, is never transferred to anyone else, and is not used for advertising.</p>
+
+  <h2>3. Online services Haven contacts</h2>
+  <p>Haven works offline. A few features contact public services, sending only what the feature needs and nothing that identifies you:</p>
+  <table>
+    <tr><th>Feature</th><th>Service</th><th>What is sent</th></tr>
+    <tr><td>App updates</td><td>Expo (EAS Update)</td><td>A request for the latest app code. Like any web request, it includes your IP address and basic app and device details (app version, platform). Your data is not sent.</td></tr>
+    <tr><td>Weather for outfit ideas (Belongings)</td><td>Open-Meteo</td><td>The city name you type, and that city’s coordinates</td></tr>
+    <tr><td>Product lookup when scanning a barcode</td><td>Open Food Facts, Open Products Facts, UPCitemdb</td><td>The barcode number</td></tr>
+    <tr><td>Google Drive backups (if connected)</td><td>Google</td><td>Your encrypted backup file (see section 2)</td></tr>
+  </table>
+  <p>Links you choose to open (a web search for a product, a shop, WhatsApp) open in other apps and follow their own privacy policies.</p>
+
+  <h2>4. Phone permissions</h2>
+  <p>Haven asks only when a feature needs it:</p>
+  <ul>
+    <li><b>Camera:</b> to scan documents and barcodes and take photos.</li>
+    <li><b>Contacts:</b> only when you choose “Add from contacts”; only the people you pick are copied in.</li>
+    <li><b>Notifications and exact alarms:</b> for reminders you set.</li>
+    <li><b>Fingerprint:</b> to unlock Haven, if you turn it on.</li>
+  </ul>
+  <p>None of these send anything off your phone.</p>
+
+  <h2>5. Sharing and exports</h2>
+  <p>When you share a document, export a spreadsheet or save a backup file, it goes only where you send it. Exported spreadsheets are not encrypted. Shared documents can be protected with a password you set.</p>
+
+  <h2>6. Error reports</h2>
+  <p>If Haven hits an error, it is recorded in a private log on your phone. Nothing is sent unless you choose to share a report.</p>
+
+  <h2>7. Children</h2>
+  <p>Haven is not directed at children under 13 and does not knowingly collect data from anyone.</p>
+
+  <h2>8. Your control</h2>
+  <p>Your data is yours. You can edit or delete anything in the app, disconnect Google Drive, delete Drive backups by removing Haven’s access in your Google Account, or uninstall the app to remove everything stored on the phone.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+  <h2>10. Contact</h2>
+  <p>SH Waqar · <a href="mailto:shwaqar7472@gmail.com">shwaqar7472@gmail.com</a></p>
+
+  <footer>© 2026 SH Waqar. All rights reserved.</footer>
+</main>
+</body>
+</html>
